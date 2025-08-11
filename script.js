@@ -56,7 +56,7 @@ function askAI(){
 
             if (max < min){ai.innerText = `Invalid choice`; return;}
 
-            ai.innerText = Math.floor(Math.random() * (max - min + 1)) + 50;
+            ai.innerText = Math.floor(Math.random() * (max - min + 1)) + min;
             return;
         } else if(inputVal === `set memory`){
             const setMemory = prompt(`Set a Memory`);
@@ -116,3 +116,4 @@ addEventListener(`keydown`, (event) => {
     }
 
 });
+
