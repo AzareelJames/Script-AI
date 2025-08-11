@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Script AI</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="WebIcon.png">
+    </head>
+    <body>
+        <noscript>
+            <img src="noScript.png" width="1000" class="noScript">
+        </noscript>
+        <style>
+            body{
+                background-color: black;
+                animation: changingColor 20s infinite alternate;
+            }
+
+            @keyframes changingColor{
+                0%{background-color: black};
+                50%{background-color: #14005b;}
+                100%{background-color: #4800ff;}
+            }
+
+        </style>
+
+        <input type="text" placeholder="Enter your prompt..." id="input">
+        <button onclick="askAI()">Enter</button>
+        <script src="script.js"></script>
+    </body>
+</html>
